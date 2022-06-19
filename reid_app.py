@@ -38,12 +38,11 @@ YOLO_MODEL = YOLO()
 class REID:
     def __init__(self) -> None:
         self.extractor = FeatureExtractor(
-            model_name='osnet_x1_0',
-            model_path='weights/torchreid/osnet_x1_0_market_256x128_amsgrad_ep150_stp60_lr0.0015_b64_fb10_softmax_labelsmooth_flip.pth',
+            model_name='osnet_ain_x1_0',
+            model_path='weights\\torchreid\\osnet_ain_x1_0_msmt17_256x128_amsgrad_ep50_lr0.0015_coslr_b64_fb10_softmax_labsmth_flip_jitter.pth',
             image_size=(256, 128),
             pixel_mean= [0.485, 0.456, 0.406],
             pixel_std=[0.229, 0.224, 0.225],
-            device='cuda'
         )    
         self.color_list = [(128, 0, 0), (0, 128, 0), (0, 0, 128), (0, 0, 0)]
         
