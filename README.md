@@ -5,7 +5,8 @@
 cv2 (read images) -> YOLOv5 (detects people, saves crops, saves bboxes) -> torchreid (ReID task) -> tkinter (show result)
 
 ### Ideas 
-Use sort or deep sort for reid in one frame
+* Use sort or deep sort for reid in one frame
+* Use docker
 
 
 ### Instalation
