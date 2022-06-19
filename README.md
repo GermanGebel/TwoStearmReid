@@ -4,6 +4,10 @@
 
 cv2 (read images) -> YOLOv5 (detects people, saves crops, saves bboxes) -> torchreid (ReID task) -> tkinter (show result)
 
+### Ideas 
+Use sort or deep sort for reid in one frame
+
+
 ### Instalation
 
 ```
@@ -19,7 +23,6 @@ pip install -r requirements.txt
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
 
 python setup.py develop
-
 ```
 
 ### Get started
@@ -27,3 +30,5 @@ python setup.py develop
 ```
 python reid_app.py
 ```
+
+### Video results: [google.drive](https://drive.google.com/drive/folders/1KmIl_g3aaXqmw_a8meM83dVVk8mAv9z-?usp=sharing)
